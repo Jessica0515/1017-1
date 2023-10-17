@@ -13,5 +13,14 @@ namespace _1017
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            HttpCookie cc = new HttpCookie(" wheein in the mood ");
+            cc.Value = TextBox1.Text;
+            //values add 可以傳很多值
+            //cc.Values.Add("name", TextBox1.Text); cookie 裡面有很多值
+            //cc["name"] = TextBox1.Text; 最簡單的方法
+        }
     }
 }
