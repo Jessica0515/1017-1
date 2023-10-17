@@ -11,6 +11,17 @@ namespace _1017
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            HttpCookie aa = Request.Cookies["wheein in the mood"];
+            //"wheein in the mood cookie 小檔案名稱
+            if(aa != null)
+            {
+                Label1.Text = aa["name"];
+            }
+            else
+            {
+                Label1.Text = "no cookies";
+                //如果使用者把cookie刪了
+            }
 
         }
     }
