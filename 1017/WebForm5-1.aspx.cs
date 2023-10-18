@@ -11,9 +11,11 @@ namespace _1017
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+         
             int r = Int32.Parse(Request.QueryString["r"]);
-            int s = Int32.Parse(Request.QueryString["s"]);
+            int s= Int32.Parse(Request.QueryString["s"]);
             Label1.Text = (r * s).ToString();
+            //他回傳是看name的名稱~上課會錯是因為我多打了空格導致的
         }
     }
 }

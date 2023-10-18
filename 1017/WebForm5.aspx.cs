@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -16,10 +17,13 @@ namespace _1017
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string r = TextBox1.Text;
-            string s = TextBox2.Text;
+            
+            string n2 = TextBox2.Text;
 
-            Response.Redirect("WebForm5-1.aspx? r =" + r + "&s=" +s);
+            string n1 = TextBox1.Text;
+            
+            Response.Redirect("WebForm5-1.aspx?r=" + n1+"&s=" +n2);
+          
         }
     }
 }
