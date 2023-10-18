@@ -22,7 +22,7 @@ namespace _1017
 
             string n1 = TextBox1.Text;
             
-            Response.Redirect("WebForm5-1.aspx?r=" + n1+"&s=" +n2);
+            Response.Redirect("WebForm5-1.aspx?name=" + n1+"&name2=" +n2);
           
         }
     }
